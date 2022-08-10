@@ -17,3 +17,20 @@ std::ostream &operator<<(std::ostream &os, const Worker &worker) {
     os << "Name:\t"<<worker.name <<"\nAge:\t"<< worker.age << "\nID:\t"<< worker.id << "\nphoneNumber:\t" << worker.phoneNumber;
     return os;
 }
+
+bool Worker::operator==(const Worker &rhs) const {
+    return static_cast<const Person &>(*this) == static_cast<const Person &>(rhs) &&
+           phoneNumber == rhs.phoneNumber;
+}
+
+bool Worker::operator!=(const Worker &rhs) const {
+    return !(rhs == *this);
+}
+
+Worker::Worker(const Worker &other) {
+    this->name = other.name;
+    this->id = other.id;
+    this->age = other.age;
+    this->phoneNumber = other.phoneNumber;
+
+}
