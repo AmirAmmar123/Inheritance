@@ -16,10 +16,13 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Worker &worker);
 
     Worker(const std::string& name, unsigned int agem, unsigned int id,unsigned int phoneNumber);
-    unsigned int get_age() const override;
-    std::string get_name() const override;
-    unsigned int  get_id() const override;
+    Worker(const Worker & other);
+    [[nodiscard]] unsigned int get_age() const override;
+    [[nodiscard]] std::string get_name() const override;
+    [[nodiscard]] unsigned int  get_id() const override;
 
+    bool operator==(const Worker &rhs) const;
 
+    bool operator!=(const Worker &rhs) const;
 };
 #endif //INHERITANCE_WORKER_H

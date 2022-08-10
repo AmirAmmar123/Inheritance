@@ -10,9 +10,14 @@ class Person {
 
 public:
     explicit Person(const std::string &name ="None", unsigned int age=0, unsigned int id=0);
-    virtual std::string get_name()const = 0;
-    virtual unsigned int get_age()const = 0;
-    virtual unsigned int get_id() const = 0;
+    Person(const Person & person);
+    [[nodiscard]] virtual std::string get_name()const = 0;
+    [[nodiscard]] virtual unsigned int get_age()const = 0;
+    [[nodiscard]] virtual unsigned int get_id() const = 0;
+
+    bool operator==(const Person &rhs) const;
+    bool operator!=(const Person &rhs) const;
+
 
 protected:
 
