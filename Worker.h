@@ -20,6 +20,7 @@ public:
     [[nodiscard]] unsigned int get_age() const override;
     [[nodiscard]] std::string get_name() const override;
     [[nodiscard]] unsigned int  get_id() const override;
+    unsigned int getPhoneNumber() const;
 
     bool operator==(const Worker &rhs) const;
 

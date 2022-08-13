@@ -19,8 +19,9 @@ std::ostream &operator<<(std::ostream &os, const Worker &worker) {
 }
 
 bool Worker::operator==(const Worker &rhs) const {
-    return static_cast<const Person &>(*this) == static_cast<const Person &>(rhs) &&
+    Person::operator==(rhs) &&
            phoneNumber == rhs.phoneNumber;
+
 }
 
 bool Worker::operator!=(const Worker &rhs) const {
@@ -33,4 +34,8 @@ Worker::Worker(const Worker &other) {
     this->age = other.age;
     this->phoneNumber = other.phoneNumber;
 
+}
+
+unsigned int Worker::getPhoneNumber() const {
+    return this->phoneNumber;
 }
