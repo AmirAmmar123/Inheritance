@@ -1,4 +1,4 @@
-C:\Users\merom\AppData\Local\JetBrains\CLion2022.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /cygdrive/c/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance -B /cygdrive/c/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\merom\OneDrive\Desktop\GitsRip-HelloWord\Inheritance -B C:\Users\merom\OneDrive\Desktop\GitsRip-HelloWord\Inheritance\cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/c/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/cmake-build-debug
+-- Build files have been written to: C:/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/cmake-build-debug

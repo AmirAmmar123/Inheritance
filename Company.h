@@ -6,12 +6,15 @@
 #define INHERITANCE_COMPANY_H
 #include "Worker.h"
 #include <vector>
-class Company{
+class Company {
 private:
     std::vector<Worker> workers;
+
 public:
+    Company()= default;
     bool addWorker(const Worker& worker);
-    bool removeWorker( Worker& worker);
     void Print();
+
+
 };
 #endif //INHERITANCE_COMPANY_H
