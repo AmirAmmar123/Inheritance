@@ -13,19 +13,14 @@ std::string Worker::get_name() const {return name;}
 unsigned int Worker::get_id() const {return id;}
 
 
-std::ostream &operator<<(std::ostream &os, const Worker &worker) {
-    os << "Name:\t"<<worker.name <<"\nAge:\t"<< worker.age << "\nID:\t"<< worker.id << "\nphoneNumber:\t" << worker.phoneNumber;
-    return os;
-}
 
 bool Worker::operator==(const Worker &rhs) const {
-    Person::operator==(rhs) &&
+    return Person::operator==(rhs) &&
            phoneNumber == rhs.phoneNumber;
-
 }
 
 bool Worker::operator!=(const Worker &rhs) const {
-    return !(rhs == *this);
+    return (&rhs != this);
 }
 
 Worker::Worker(const Worker &other) {
@@ -39,3 +34,9 @@ Worker::Worker(const Worker &other) {
 unsigned int Worker::getPhoneNumber() const {
     return this->phoneNumber;
 }
+
+void Worker::print(std::ostream &os) const {
+    os << "Employee Name: " << name << "\nAge: " << age << "\nID: " << id << "\nPhoneNumber: " << phoneNumber << std::endl;
+}
+
+Worker::~Worker() = default;

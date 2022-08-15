@@ -8,10 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/cygdrive/c/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/Company.cpp" "CMakeFiles/Inheritance.dir/Company.cpp.o" "gcc" "CMakeFiles/Inheritance.dir/Company.cpp.o.d"
-  "/cygdrive/c/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/Person.cpp" "CMakeFiles/Inheritance.dir/Person.cpp.o" "gcc" "CMakeFiles/Inheritance.dir/Person.cpp.o.d"
-  "/cygdrive/c/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/Worker.cpp" "CMakeFiles/Inheritance.dir/Worker.cpp.o" "gcc" "CMakeFiles/Inheritance.dir/Worker.cpp.o.d"
-  "/cygdrive/c/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/main.cpp" "CMakeFiles/Inheritance.dir/main.cpp.o" "gcc" "CMakeFiles/Inheritance.dir/main.cpp.o.d"
+  "C:/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/Company.cpp" "CMakeFiles/Inheritance.dir/Company.cpp.obj" "gcc" "CMakeFiles/Inheritance.dir/Company.cpp.obj.d"
+  "C:/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/Person.cpp" "CMakeFiles/Inheritance.dir/Person.cpp.obj" "gcc" "CMakeFiles/Inheritance.dir/Person.cpp.obj.d"
+  "C:/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/PrintAble_I.cpp" "CMakeFiles/Inheritance.dir/PrintAble_I.cpp.obj" "gcc" "CMakeFiles/Inheritance.dir/PrintAble_I.cpp.obj.d"
+  "C:/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/Worker.cpp" "CMakeFiles/Inheritance.dir/Worker.cpp.obj" "gcc" "CMakeFiles/Inheritance.dir/Worker.cpp.obj.d"
+  "C:/Users/merom/OneDrive/Desktop/GitsRip-HelloWord/Inheritance/main.cpp" "CMakeFiles/Inheritance.dir/main.cpp.obj" "gcc" "CMakeFiles/Inheritance.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

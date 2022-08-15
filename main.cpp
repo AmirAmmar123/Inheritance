@@ -9,9 +9,9 @@ int main() {
     company.addWorker(worker1);
     company.addWorker(worker2);
 
-    company.removeWorker(worker1);
 
     company.Print();
+
 
 
     return 0;

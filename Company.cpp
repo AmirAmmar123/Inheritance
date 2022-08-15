@@ -11,14 +11,18 @@ bool Company::addWorker(const Worker &worker) {
             return false;
         }
     }
-    workers.emplace_back(worker.get_name(),worker.get_id(),worker.get_age(),worker.getPhoneNumber());
+
+    workers.emplace_back(worker.get_name(),worker.get_age(),worker.get_id(),worker.getPhoneNumber());
     return true;
 }
 
 
 
 void Company::Print() {
-    std::for_each(workers.begin(),workers.end(), [&] (const auto &worker)  {
+    std::for_each(workers.begin(),workers.end(), [&] (const Worker &worker)  {
         std::cout << worker << std::endl;
     });
 }
+
+
+
